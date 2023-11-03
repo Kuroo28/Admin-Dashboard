@@ -231,3 +231,82 @@ body {
     transition: transform 0.2s;
     transform: scale(1.2);
 }
+
+.content-container .trendings-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.content-container .trendings-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container .trendings-container .announcement > h4 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.content-container .trendings-container .main-announcement {
+    background: white;
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    justify-content: space-around;
+}
+
+.content-container .trendings-container .main-announcement .announcement-content > h6 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.content-container .trendings-container .main-announcement .announcement-content > p {
+    opacity: 0.8;
+    margin: 0;
+}
+
+.content-container .trendings-container .announcement-border {
+    width: 100%;
+    border-top: 2px solid lightslategray;
+}
+
+.content-container .trendings-container .trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container .trendings-container .trending > h4 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.content-container .trendings-container .trending .trending-contents {
+    background: white;
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    justify-content: space-around;
+}
+
+.content-container .trendings-container .trending .trending-contents .trends {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-container .trendings-container .trending .trending-contents .trends .trending-tags {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
